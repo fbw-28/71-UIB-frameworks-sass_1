@@ -1,0 +1,22 @@
+@import "./variables";
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $bodyFont;
+}
+
+
+ul {
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+    }
+}
