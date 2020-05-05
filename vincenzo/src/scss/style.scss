@@ -117,3 +117,13 @@ footer {
         }
     }
 }
+
+@media screen and(min-width:1024px) {
+    nav {
+        justify-content: flex-end;
+
+        ul {
+            width: 400px;
+        }
+    }
+}

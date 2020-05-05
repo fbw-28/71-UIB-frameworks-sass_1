@@ -152,4 +152,15 @@ footer {
 footer ul li a {
   color: #fff;
 }
+
+@media screen and (min-width: 1024px) {
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav ul {
+    width: 400px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
