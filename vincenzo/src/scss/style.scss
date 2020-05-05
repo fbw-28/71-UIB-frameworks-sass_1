@@ -1,0 +1,129 @@
+@import "./variables";
+@import "./normalize";
+
+
+nav,
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li {
+            a {
+                color: $navAndFooter;
+            }
+        }
+    }
+}
+
+header {
+    background: $headerImg no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+
+    h1 {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        top: 30px;
+    }
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+
+    .card {
+        width: 90%;
+        height: fit-content;
+        margin: 60px auto;
+        border: $borders;
+        border-radius: 10px;
+        background: $cardBg;
+
+        .card-top {
+            .card-image {
+                width: 100%;
+                height: 220px;
+                padding: 15px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .card-down {
+            padding: 15px;
+
+            columns .card-text {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    section {
+        padding: 15px;
+        display: grid;
+        grid-template-rows: 15% 70% 15%;
+
+        aside {
+            border: $borders;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        aside h3,
+        article h2 {
+            margin-bottom: 10px;
+        }
+
+        .aside-one {
+            grid-row: 1/2;
+        }
+
+        article {
+            grid-row: 2/3;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .aside-two {
+            grid-row: 3/4;
+        }
+    }
+}
+
+footer {
+    background: $navAndFooter;
+
+    ul {
+        li {
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and(min-width:1024px) {
+    nav {
+        justify-content: flex-end;
+
+        ul {
+            width: 400px;
+        }
+    }
+}
