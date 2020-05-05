@@ -1,0 +1,80 @@
+@media (min-width:768px) {
+    .menu {
+        justify-content: flex-end;
+
+        &_link {
+            font-size: 20px;
+            margin: 15px;
+        }
+    }
+
+    .banner {
+        height: 30vh;
+        padding-top: 20px;
+    }
+
+    .container {
+        padding: 20px 60px;
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+
+            &_img {
+                margin: 0 auto;
+                height: 100%;
+            }
+
+            .left {
+                flex-basis: 30%;
+            }
+
+            .right {
+                flex-basis: 68%;
+            }
+        }
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 15px;
+
+        .aside,
+        .article {
+            padding: 10px;
+        }
+    }
+
+    footer {
+        .footer_menu {
+            justify-content: center;
+
+            .footer_link {
+                font-size: 20px;
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .card {
+            flex-basis: 45%;
+
+            .left {
+                flex-basis: 45%;
+            }
+
+            .right {
+                flex-basis: 53%;
+            }
+        }
+    }
+}
