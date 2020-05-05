@@ -1,0 +1,130 @@
+@import 'variables';
+
+// NAVIGATION 
+
+.navigation {
+    .nav {
+        padding: 1rem;
+
+        .nav-link {
+            color: $nav-text;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        .nav.justify-content-right {
+            justify-content: flex-end !important;
+        }
+    }
+}
+
+// HEADER 
+
+.jumbotron {
+    background-image: url(./images_reference/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 50vh;
+    text-align: center;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        height: 30vh;
+    }
+}
+
+// CARDS TOP 
+
+.cards-top {
+    display: block;
+    width: 90%;
+    margin: auto;
+
+    .card {
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: $cards-bg;
+
+        .card-img-top {
+            width: 100%;
+            padding: 1rem;
+            object-fit: cover;
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        width: 80%;
+
+        .card {
+            flex-flow: row nowrap;
+
+            .card-img-top {
+                width: 14rem;
+                height: auto;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $breakpoint-desktop) {
+        width: unset;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-bottom: 1rem;
+
+        .card {
+            flex-basis: 48%;
+            margin: 10px;
+        }
+    }
+}
+
+// CARDS BOTTOM 
+
+.cards-bottom {
+    display: block;
+
+    .card-aside {
+        width: 90%;
+        margin: 0 auto 20px auto;
+        display: block;
+        background-color: $cards-2-bg;
+        border: $cards-aside;
+        border-radius: 0;
+    }
+
+    .card-article {
+        width: 90%;
+        margin: 0 auto 20px auto;
+        display: block;
+        background-color: $cards-2-bg;
+        border: none;
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+        margin: auto;
+
+        .card-aside {
+            flex-basis: 40%;
+        }
+
+        .card-article {
+            flex-basis: 60%;
+        }
+    }
+}
+
+// FOOTER 
+
+.footer {
+    padding: 1rem;
+    background-color: $footer-bg;
+
+    .nav-link {
+        color: $footer-text;
+    }
+}
