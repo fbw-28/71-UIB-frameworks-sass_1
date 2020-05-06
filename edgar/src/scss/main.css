@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+
+body header {
+  width: 100%;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header nav ul li {
+  padding: 10px;
+}
+
+body header nav ul li a {
+  font-size: 24px;
+  color: #016690;
+  text-decoration: none;
+}
+
+body header div {
+  width: 100%;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+body header div h1 {
+  margin: 8vh auto;
+}
+
+body main div.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main div.card-container div.card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #e0ddb2;
+  border-radius: 8px;
+}
+
+body main div.card-container div.card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body main aside div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #dad6ab;
+  border-radius: 2px;
+}
+
+body main aside div.card div h3 {
+  width: 100%;
+}
+
+body main article {
+  margin: 20px;
+  padding: 10px;
+}
+
+body footer {
+  background: #016690;
+}
+
+body footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer ul li {
+  padding: 20px;
+}
+
+body footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body header nav ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 20px;
+  }
+  body header div {
+    height: 30vh;
+  }
+  body header div h1 {
+    margin: 6vh auto;
+  }
+  body main div.card-container div.card {
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main div.card-container div.card img {
+    width: 20vw;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  body main div.articles-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  body header nav {
+    padding: 10px;
+  }
+  body header nav ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 20px;
+  }
+  body header div {
+    height: 40vh;
+  }
+  body header div h1 {
+    margin: 6vh auto;
+  }
+  body main div.card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main div.card-container div.card {
+    width: 45vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main div.card-container div.card img {
+    width: 15vw;
+    height: 20vh;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  body main div.articles-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
