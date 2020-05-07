@@ -1,0 +1,30 @@
+$bg-color-card: #e0ddb2;
+$border-color-ca: #dad6ab;
+$color-nf: #016690;
+
+
+.card {
+    background-color: $bg-color-card;
+}
+
+.card,
+aside {
+    border-color: $border-color-ca;
+}
+
+aside {
+    border: 1px solid;
+}
+
+nav.nav-top {
+    color: $color-nf;
+}
+
+footer {
+    background-color: $color-nf;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,31 @@
+@use 'partials/reset';
+
+@use 'bootstrap-scss/bootstrap';
+
+@use 'partials/color-theme';
+
+.header {
+    background: url(/daniel/assets/images/header.jpg) center center no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.text-reset {
+    color: inherit;
+}
+
+.card {
+    min-height: 260px;
+}
+
+.card-img {
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
+}
+
+@media screen and (min-width:768px) {
+    .card-section {
+        margin: 0 5vw;
+    }
+}
