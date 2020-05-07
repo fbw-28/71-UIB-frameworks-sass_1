@@ -1,0 +1,147 @@
+
+body {
+    line-height: em;
+}
+ .nav-one {
+     display: flex;
+     flex-wrap: wrap;
+     padding-left: 0;
+     margin-bottom: 0;
+     list-style: none;
+ }
+
+ .justify-content-one {
+    justify-content: flex-end;
+ }
+
+div {
+
+    background-position:  inherit;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    div {
+        background-image: initial;
+    }   
+}
+
+
+.jumbotron {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+    background-image: url(/images/header.jpg);
+    h5 {
+        align-self: flex-start ;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+}
+   
+.row-out { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    margin: 8px auto;
+    width: 92vw;   
+}
+
+
+.no-gutters {
+    background-color:  #e0ddb2;
+    height: fit-content ;
+}
+
+.mb-3 {
+
+ height: fit-content; 
+ border: none;
+ padding: 0;
+}
+    
+
+.col-md-8 {
+    display: flex;
+    align-items: flex-start;
+    
+}
+.card-body {
+   
+    margin-top:5px;
+    padding: 10px;
+   
+}
+
+.col-md-4 {
+
+   margin: 0px;
+    
+}
+.card-img {
+    align-self: center;
+    padding: 12px;
+    margin-top: 1px;
+}
+
+.card-title {
+     font-weight: bolder;
+}
+ .card {
+     width: fit-content;
+ }
+
+.card-2 {
+
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+   .card-one, .card-three {
+    flex-grow: 1;
+   }
+
+   .card-two {
+       flex-grow: 2;
+       
+   }
+}
+
+
+.justify-content-center {
+    bottom: 0;
+    justify-content: center;
+    background-color: #016690;
+    .nav-link {
+        color: white;
+    }
+}
+
+.card-one, .card-three {
+    border: 1px solid #dad6ab;
+}
+
+    .card-text:last-child{
+    color: #016690;
+} 
+
+
+@media (min-width: 1024px) {
+    .row {
+      margin-right: 0;
+        width: 44vw;
+    }  
+    
+}
+
+@media (max-width: 768px) {
+    
+  .justify-content-one {
+      justify-content: center;
+  }
+
+}
