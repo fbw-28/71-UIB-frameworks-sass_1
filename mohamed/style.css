@@ -1,0 +1,24 @@
+
+.jumbotron {
+    background-image: url(./images/header.jpg);
+    text-align: center;
+    font-size: 30px;
+}
+
+.container > h1 {
+  position: relative;
+  top: 20px;
+
+}
+
+.row {
+flex-direction: row;
+flex-wrap: wrap;
+display: flex;
+justify-content: start;
+
+/* try to use relative units, such as em or rem rather than absolute units like px, or fit content etc */
+  max-width: 20rem;
+  max-height: 15rem;
+  border: 2px solid black;
+}
